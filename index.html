@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>address-book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Add a contact</h2>
+          <form id="new-contact">
+            <div class="form-group">
+            <label for="new-first-name">First Name</label>
+            <input type="text" class="form-control" id="new-first-name">
+            <label for="new-last-name">Last Name</label>
+            <input type="text" class="form-control" id="new-last-name">
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+          <h2>Contacts:</h2>
+          <ul id="contacts">
+
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <div id="show-contact">
+            <h2></h2>
+            <p>First name: <span class="first-name"></span></p>
+            <p>Last name: <span class="last-name"></span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
